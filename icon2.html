@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>icon-designed2</title>
+</head>
+<style>
+            *{
+            margin: 0;
+            padding: 0;
+        }
+        .bigbox{
+            width: 700px;
+            height: 700px;
+            background-color: #6646c0;
+            margin: 100px auto;
+            padding: 20px;
+            border-radius: 20%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:center;
+            align-content: center;
+            border:50px double #4216bd;
+        }
+        .bigbox::before{
+            content: "";
+            width: 50px;
+            height: 50px;
+            background-color: #d093e2;
+            border: 20px solid #9e50dac0;
+            float: right;
+            border-radius: 90%;
+            position: absolute;
+            margin-top: 300px;
+        }
+        .minibox1,.minibox2,.minibox3,.minibox4{
+            width: 340px;
+            height: 340px;
+        }
+        .minibox1{
+            display: flex;
+            justify-content: end;
+        }
+        .minibox2{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        #top-right-smallbox{
+            width: 300px;
+            height: 150px;
+            background-color: #d093e2;
+            border: 20px solid #9e50dac0;
+            margin: 0;
+            border-top-left-radius: 100%;
+            border-bottom-left-radius: 200%;
+            border-top-right-radius: 200%;
+            border-bottom-right-radius: 100%;
+
+        }
+        #bottom-right-smallbox{
+            width: 150px;
+            height: 300px;
+            background-color: #d093e2;
+            border: 20px solid #9e50dac0;
+            margin: 0;
+            border-top-left-radius: 200%;
+            border-bottom-left-radius: 100%;
+            border-top-right-radius: 100%;
+            border-bottom-right-radius: 200%;
+        }
+        #top-left-smallbox{
+            width: 150px;
+            height: 300px;
+            background-color: #d093e2;
+            border: 20px solid #9e50dac0;
+            margin: 0;
+            border-top-left-radius: 200%;
+            border-bottom-left-radius: 100%;
+            border-top-right-radius: 100%;
+            border-bottom-right-radius: 200%;
+        }
+        #bottom-left-smallbox{
+            width: 300px;
+            height: 150px;
+            background-color: #d093e2;
+            border: 20px solid #9e50dac0;
+            margin:0;
+            border-top-left-radius: 100%;
+            border-bottom-left-radius: 200%;
+            border-top-right-radius: 200%;
+            border-bottom-right-radius: 100%;
+        }
+</style>
+<body>
+    <div class="bigbox">
+        <div class="minibox1">
+            <div id="top-left-smallbox"></div>
+        </div>
+        <div class="minibox2">
+            <div id="top-right-smallbox"></div>
+        </div>
+        <div class="minibox3">
+            <div id="bottom-left-smallbox"></div>
+        </div>
+        <div class="minibox4">
+            <div id="bottom-right-smallbox"></div>
+        </div>
+    </div>
+</body>
+</html>

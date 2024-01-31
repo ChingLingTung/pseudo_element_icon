@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>icon-designed</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .bigbox{
+            width: 600px;
+            height: 600px;
+            background-color: #880430;
+            margin: 100px auto;
+            padding: 100px;
+            border-radius: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .bigbox::before{
+            content: "";
+            width: 50px;
+            height: 50px;
+            background-color: #e8a8a8;
+            border: 20px solid #e76a6ac0;
+            float: right;
+            border-radius: 90%;
+            position: absolute;
+            margin-top: 250px;
+        }
+        #top-right-smallbox{
+            width: 200px;
+            height: 200px;
+            background-color: #e8a8a8;
+            border: 20px solid #e76a6ac0;
+            margin: auto;
+            border-top-left-radius: 70%;
+            border-bottom-left-radius: 70%;
+            border-top-right-radius: 360%;
+            border-bottom-right-radius: 70%;
+
+        }
+        #bottom-right-smallbox{
+            width: 200px;
+            height: 200px;
+            background-color: #e8a8a8;
+            border: 20px solid #e76a6ac0;
+            margin: auto;
+            border-top-left-radius: 70%;
+            border-bottom-left-radius: 70%;
+            border-top-right-radius: 70%;
+            border-bottom-right-radius: 360%;
+        }
+        #top-left-smallbox{
+            width: 200px;
+            height: 200px;
+            background-color: #e8a8a8;
+            border: 20px solid #e76a6ac0;
+            margin: auto;
+            border-top-left-radius: 360%;
+            border-bottom-left-radius: 70%;
+            border-top-right-radius: 70%;
+            border-bottom-right-radius: 70%;
+        }
+        #bottom-left-smallbox{
+            width: 200px;
+            height: 200px;
+            background-color: #e8a8a8;
+            border: 20px solid #e76a6ac0;
+            margin: auto;
+            border-top-left-radius: 70%;
+            border-bottom-left-radius: 360%;
+            border-top-right-radius: 70%;
+            border-bottom-right-radius: 70%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="bigbox">
+        <div id="top-left-smallbox"></div>
+        <div id="top-right-smallbox"></div>
+        <div id="bottom-left-smallbox"></div>
+        <div id="bottom-right-smallbox"></div>
+    </div>
+</body>
+</html>

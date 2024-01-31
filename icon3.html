@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>icon-designed3</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .bigbox{
+            width: 700px;
+            height: 700px;
+            background-color: #236114;
+            margin: 100px auto;
+            padding: 50px;
+            border-radius: 20%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:center;
+            align-content: center;
+            border:50px solid #053e13;
+        }
+        .minibox{
+            width: 350px;
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .nowrap{
+            display: flex;
+            flex-wrap: nowrap ;
+        }        
+        .center{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        .align-items-center{
+            display: flex;
+            align-items: center;
+        } 
+        .bigbox::before{
+            content: "";
+            width: 200px;
+            height: 200px;
+            background-color: #0dc21c;
+            float: right;
+            border-radius: 20%;
+            position: absolute;
+            margin-top: 250px;
+            -moz-transform:rotate(20deg);
+            -webkit-transform:rotate(20deg);
+            -o-transform:rotate(20deg);
+            -ms-transform:rotate(20deg);
+            transform:rotate(20deg);
+        }
+        /* .triangle {
+            width: 0;
+            height: 0;
+            border: 200px solid;
+            border-color: orangered skyblue gold yellowgreen;
+        } */
+        #top-triangle {
+            width: 0;
+            height: 0;
+            border-top: 250px solid #0dc21c;
+            border-right:80px solid transparent;
+            border-left:80px solid transparent;
+        }
+        #top-semi-circle{
+            width: 160px;
+            height: 100px;
+            background-color:#0dc21c ;
+            border-radius: 90px 90px 0px 0px;
+        }
+        #right-triangle {
+            width: 0;
+            height: 0;
+            border-right: 250px solid #0dc21c;
+            border-top:80px solid transparent;
+            border-bottom:80px solid transparent;
+        }
+        #right-semi-circle{
+            width: 100px;
+            height: 160px;
+            background-color:#0dc21c ;
+            border-radius: 0px 90px 90px 0px;
+        }
+        #left-triangle{
+            width: 0;
+            height: 0;
+            border-left: 250px solid #0dc21c;
+            border-top:80px solid transparent;
+            border-bottom:80px solid transparent;
+        }
+        #left-semi-circle{
+            width: 100px;
+            height: 160px;
+            background-color:#0dc21c ;
+            border-radius: 90px 0px 0px 90px;
+        }
+        #bottom-triangle{
+            width: 0;
+            height: 0;
+            border-bottom: 250px solid #0dc21c;
+            border-right:80px solid transparent;
+            border-left:80px solid transparent;
+        }
+        #bottom-semi-circle{
+            width: 160px;
+            height: 100px;
+            background-color:#0dc21c ;
+            border-radius: 0px 0px 90px 90px;
+            }
+</style>
+</head>
+<body>
+<div class="bigbox">
+    <div class="minibox">
+        <div>
+            <div id="top-semi-circle"></div>
+            <div id="top-triangle"></div>
+        </div>
+    </div>
+    <div class="minibox">
+        <div class="nowrap align-items-center">
+            <div id="right-triangle"></div>
+            <div id="right-semi-circle"></div>
+        </div>
+    </div>
+    <div class="minibox">
+        <div class="nowrap align-items-center">
+            <div id="left-semi-circle"></div>
+            <div id="left-triangle"></div>
+        </div>
+    </div>
+    <div class="minibox">
+        <div>
+            <div id="bottom-triangle"></div>
+            <div id="bottom-semi-circle"></div>
+        </div>
+    </div>
+</div>
+</body>
